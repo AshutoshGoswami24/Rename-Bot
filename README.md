@@ -1,4 +1,4 @@
-<img src="https://graph.org/file/7c4cb180b4529bef350c0.jpg" alt="logo" target="/blank">
+
 
 
 <p align="center">🩵 Thanks for Being Here 🩵</p>
