@@ -1,0 +1,64 @@
+{
+    "name": "Renamer Bot ",
+    "description": "Telegram File Renamer Bot",
+    "logo": "https://graph.org/file/7c4cb180b4529bef350c0.jpg",
+    "keywords": ["Renamer Bot ", "Mongo DB"],    
+    "repository": "https://github.com/AshutoshGoswami24/Rename-Bot",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": "",
+            "required": true
+        },
+        "WEBHOOK": {
+            "description": "if your server is need web service! value = True else value = False",
+            "value": "True",
+            "required": false
+        },
+        "FORCE_SUB": {
+            "description": "Your force sub channel user name without [@] ",
+            "value": "",
+            "required": false 
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": "",
+            "required": true
+        },
+        "ADMIN": {
+            "description":"Add Your User ID multiple is use space to split",
+            "value": "",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description":"Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must",
+            "value": "",
+            "required": true          
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": "",
+            "required": true
+        },
+        "DB_NAME":{ 
+            "description":"Your Mongo DB Database Name ",
+            "value": "Ashu",
+            "required": false
+        },
+        "START_PIC": {
+            "description": "Your Bot start cmd Pic from @PandaFilter_bot",
+            "value": "https://graph.org/file/7c4cb180b4529bef350c0.jpg",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}

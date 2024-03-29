@@ -1,0 +1,16 @@
+#---ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24---#
+#---ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot---#
+pyrogram==2.0.83
+TgCrypto==1.2.5 
+motor==3.1.2
+#---ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24---#
+#---ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot---#
+dnspython==2.3.0
+hachoir==3.2.0
+Pillow==10.2.0 
+#---ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24---#
+#---ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot---#
+aiohttp==3.8.4
+pytz==2023.3
+#---ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24---#
+#---ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot---#
