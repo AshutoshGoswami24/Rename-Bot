@@ -71,11 +71,11 @@ async def cb_handler(client, query: CallbackQuery):
 
 
 
-@Client.on_message(filters.private & filters.command(["donate", "d"]))
+@Client.on_message(filters.private & filters.command(["donate", "Donateus"]))
 async def donate(client, message):
 	text = Txt.DONATE_TXT
 	keybord = InlineKeyboardMarkup([
-        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/PandaWep"), 
+        			[InlineKeyboardButton("💸DONATE US",url = "upi://pay?pa=PandaWep@ybl"), 
         			InlineKeyboardButton("✖️ Close",callback_data = "close") ]])
 	await message.reply_text(text = text,reply_markup = keybord)
 
