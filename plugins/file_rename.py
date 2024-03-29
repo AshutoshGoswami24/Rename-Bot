@@ -69,8 +69,8 @@ async def refunc(client, message):
 
 @Client.on_callback_query(filters.regex("upload"))
 async def doc(bot, update):    
-    prefix = await jishubotz.get_prefix(update.message.chat.id)
-    suffix = await jishubotz.get_suffix(update.message.chat.id)
+    prefix = await AshutoshGoswami24.get_prefix(update.message.chat.id)
+    suffix = await AshutoshGoswami24.get_suffix(update.message.chat.id)
     new_name = update.message.text
     new_filename_ = new_name.split(":-")[1]
 
@@ -115,8 +115,8 @@ async def doc(bot, update):
     ph_path = None
     user_id = int(update.message.chat.id) 
     media = getattr(file, file.media.value)
-    c_caption = await jishubotz.get_caption(update.message.chat.id)
-    c_thumb = await jishubotz.get_thumbnail(update.message.chat.id)
+    c_caption = await AshutoshGoswami24.get_caption(update.message.chat.id)
+    c_thumb = await AshutoshGoswami24.get_thumbnail(update.message.chat.id)
 
     if c_caption:
          try:

@@ -9,7 +9,7 @@ from config import Config, Txt
 @Client.on_message(filters.private & filters.command("start"))
 async def start(client, message):
     user = message.from_user
-    await jishubotz.add_user(client, message)                
+    await AshutoshGoswami24.add_user(client, message)                
     button = InlineKeyboardMarkup([
         [InlineKeyboardButton('🔊 Updates', url='https://t.me/PandaWep'),
         InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/PandaWepChat')],
