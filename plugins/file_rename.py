@@ -24,7 +24,7 @@ async def rename_start(client, message):
 	    reply_to_message_id=message.id,  
 	    reply_markup=ForceReply(True)
         )       
-        await sleep(30)
+        await sleep(3)
     except FloodWait as e:
         await sleep(e.value)
         await message.reply_text(
