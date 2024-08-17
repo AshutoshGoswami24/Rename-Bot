@@ -1,1 +1,1 @@
-worker: python3 AshuXBot.py
+worker: python3 bot.py
