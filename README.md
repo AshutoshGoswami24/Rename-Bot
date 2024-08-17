@@ -82,7 +82,5 @@ status - Check bot status [FOR ADMINS USE ONLY].
 
 ### ❤️ RESPECTING ❤️
 - [Ashu](https://github.com/AshutoshGoswami24)
-- [PandaWep](https://github.com/PandaWep)
 
-### 😍 BOTS CHANNEL 😍
-- [PandaWep](https://t.me/PandaWep)
+
