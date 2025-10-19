@@ -16,7 +16,7 @@ logger.setLevel(logging.INFO)
 
 @Client.on_message(filters.command(["stats", "status", "s"]) & filters.user(Config.ADMIN))
 async def get_stats(bot, message):
-    total_users = await AshutoshGoswami24.total_users_count()
+    total_users = await Kakashi.total_users_count()
     uptime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - bot.uptime))    
     start_t = time.time()
     st = await message.reply('**Processing The Details.....**')    
@@ -49,14 +49,14 @@ async def ping(_, message):
 @Client.on_message(filters.command(["broadcast", "b"]) & filters.user(Config.ADMIN) & filters.reply)
 async def broadcast_handler(bot: Client, m: Message):
     await bot.send_message(Config.LOG_CHANNEL, f"{m.from_user.mention} or {m.from_user.id} Is Started The Broadcast......")
-    all_users = await AshutoshGoswami24.get_all_users()
+    all_users = await Kakashi.get_all_users()
     broadcast_msg = m.reply_to_message
     sts_msg = await m.reply_text("Broadcast Started..!") 
     done = 0
     failed = 0
     success = 0
     start_time = time.time()
-    total_users = await AshutoshGoswami24.total_users_count()
+    total_users = await Kakashi.total_users_count()
     async for user in all_users:
         sts = await send_msg(user['_id'], broadcast_msg)
         if sts == 200:
@@ -64,7 +64,7 @@ async def broadcast_handler(bot: Client, m: Message):
         else:
            failed += 1
         if sts == 400:
-           await AshutoshGoswami24.delete_user(user['_id'])
+           await kakasahi.delete_user(user['_id'])
         done += 1
         if not done % 20:
            await sts_msg.edit(f"**Broadcast In Progress:** \n\nTotal Users {total_users} \nCompleted: {done} / {total_users}\nSuccess: {success}\nFailed: {failed}")
